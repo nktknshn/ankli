@@ -29,30 +29,23 @@ def args_parser():
     parser.add_argument(
         "-s",
         "--storage-path",
-        help="Path to Anki2 storage",
+        help="Path to Anki2 storage (env var ANKI2_STORAGE_PATH)",
         default=os.environ.get("ANKI2_STORAGE_PATH"),
         dest="storage_path",
     )
 
     subparsers = parser.add_subparsers(dest="command")
-
     notes_type_parser = subparsers.add_parser(
         "notes-types", parents=[cmd_notes_types.parser]
     )
-
     card_type_parser = subparsers.add_parser(
         "cards-types", parents=[cmd_cards_types.parser]
     )
-
     cards_parser = subparsers.add_parser("cards", parents=[cmd_cards.parser])
-
     notes_parser = subparsers.add_parser("notes", parents=[cmd_notes.parser])
     scheme_parser = subparsers.add_parser("scheme")
-
     script_parser = subparsers.add_parser("script", parents=[cmd_script.parser])
-
     sync_parser = subparsers.add_parser("sync", parents=[cmd_sync.parser])
-
     backup_parser = subparsers.add_parser("backup", parents=[cmd_backup.parser])
 
     return parser
