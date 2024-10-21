@@ -58,7 +58,7 @@ def handle_cards_types(col: ankicol.AnkiCollection, args: Any):
         print("No command specified")
         return
 
-    cards_types = col.card_types()
+    # cards_types = col.card_types()
 
     if args.cards_type_command == "list":
         return handle_list(col, args)

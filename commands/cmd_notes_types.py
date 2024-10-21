@@ -48,11 +48,11 @@ edit_parser.add_argument("note_type_id", type=int)
 
 new_parser = subparsers.add_parser("new")
 new_parser.add_argument("name", type=str)
-# new_parser.
 
 
 def handle_edit(acol: ankicol.AnkiCollection, args: argparse.Namespace):
-    nt_id = notes.NotetypeId(args.note_type_id)
+    # nt_id = notes.NotetypeId(args.note_type_id)
+    print("Not implemented")
 
 
 NEW_TYPE_TEMPLATE = """Fields:

@@ -50,7 +50,6 @@ def args_parser():
     scheme_parser = subparsers.add_parser("scheme")
 
     script_parser = subparsers.add_parser("script", parents=[cmd_script.parser])
-    # script_parser.add_argument("script", help="script file")
 
     sync_parser = subparsers.add_parser("sync", parents=[cmd_sync.parser])
 
