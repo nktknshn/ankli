@@ -11,3 +11,6 @@ AnKli is a command line tool for Anki.
 - script
 - sync
 
+```
+ankli 
+```
