@@ -32,7 +32,7 @@ full_parser_download.add_argument("backup_folder", help="backup folder", type=st
 full_parser_upload.add_argument("backup_folder", help="backup folder", type=str)
 
 
-ENV_HKEY_KEY = "ANKI_HKEY"
+ENV_HKEY_KEY = "ANKI2_HKEY"
 
 STATUS = {
     0: "Not required",
